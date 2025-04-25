@@ -27,6 +27,7 @@ describe('Main', () => {
   it('renders app into root element', async () => {
     // Import main (this will execute the script)
     await import('./main');
+    expect(true).toBe(false); // TODO: Remove this line
 
     // Verify createRoot was called with the root element
     expect(createRoot).toHaveBeenCalledTimes(1);
